@@ -27,7 +27,7 @@ function App() {
           Switch to {theme === "light" ? "Dark" : "Light"} Mode
         </button>
       </header>
-      <Router>
+      <Router  basename="/Personal-portfolio">
       <Header theme={theme} toggleTheme={toggleTheme}/>
       <main>
         <Routes>
