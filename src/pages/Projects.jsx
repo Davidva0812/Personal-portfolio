@@ -26,6 +26,10 @@ export default function Projects() {
         <h4>🎮 Fantasy RPG Game Website (HTML, CSS, Bootstrap, JavaScript)</h4>
         <p>A website for the role-playing game, called Tales of Eldoria.</p>
         <a href="https://davidva0812.github.io/Fantasy-website/" target="_blank" rel="noreferrer">
+          🔗 View Website
+        </a>
+        <br />
+        <a href="https://github.com/Davidva0812/Fantasy-website" target="_blank" rel="noreferrer">
           🔗 View on GitHub
         </a>
       </div>
