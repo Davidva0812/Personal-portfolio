@@ -6,12 +6,12 @@ export default function Certificates() {
       <li>
           <strong>freeCodeCamp:</strong> JavaScript Algorithms and Data Structures
           <br />
-           <p className="card-text">State: <strong className="text-warning">In progres</strong></p>
+           <p className="card-text">State: <strong className="text-warning">In progress</strong></p>
       </li>
       <li>
           <strong>freeCodeCamp:</strong> Front End Development Libraries
           <br />
-           <p className="card-text">State: <strong className="text-warning">In progres</strong></p>
+           <p className="card-text">State: <strong className="text-warning">In progress</strong></p>
       </li>
       <br />
       <h2>📜 Certificates</h2>
