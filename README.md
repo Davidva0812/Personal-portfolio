@@ -43,3 +43,7 @@ npm start
 ## License
 
 This project is open source and available under the MIT License.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0750ef7feb1b90d58ccde0b4a57244783c948493
