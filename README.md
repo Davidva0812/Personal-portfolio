@@ -23,15 +23,15 @@ This is my personal portfolio website built with **React** and styled using **Bo
 ## Check It Out
 
 You can explore the live version of the site here:
-👉 https://github.com/Davidva0812/Personal-portfolio
+👉 https://davidva0812.github.io/Personal-portfolio/
 
 ## Getting Started
 
 1. **Clone this repository**
 
 ```bash
-git clone https://github.com/yourusername/your-portfolio.git
-cd your-portfolio
+git clone https://github.com/Davidva0812/Personal-portfolio.git
+cd Personal-portfolio
 ```
 
 2. **Install dependencies**
