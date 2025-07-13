@@ -32,3 +32,19 @@ body.dark {
 a {
   text-decoration: none;
 }
+
+.footer.light {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  color: #333;
+  margin-top: auto;
+}
+
+.footer.dark {
+  text-align: center;
+  padding: 1rem;
+  background-color: #212123;
+  color: #fffdfd;
+  margin-top: auto;
+}

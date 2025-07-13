@@ -17,12 +17,6 @@ export default function Contact() {
             github.com/Davidva0812
           </a>
         </li>
-        <li>
-          📄 CV:{" "}
-          <a href="/documents/David_Varga_CV.pdf" target="_blank">
-            Download PDF
-          </a>
-        </li>
       </ul>
     </div>
   );

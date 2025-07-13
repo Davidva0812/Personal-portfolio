@@ -10,6 +10,7 @@ This is my personal portfolio website built with **React** and styled using **Bo
 - Certificates page highlighting completed and in-progress courses
 - Contact form for direct communication
 - Light and dark mode toggle (optional)
+- Dynamic footer for the year data
 
 ## Technologies Used
 
@@ -18,6 +19,11 @@ This is my personal portfolio website built with **React** and styled using **Bo
 - Bootstrap 5 (CSS framework for responsive layout and styling)
 - JavaScript (ES6+)
 - HTML5 & CSS3
+
+## Check It Out
+
+You can explore the live version of the site here:
+👉 https://github.com/Davidva0812/Personal-portfolio
 
 ## Getting Started
 

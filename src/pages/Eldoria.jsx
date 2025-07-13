@@ -12,7 +12,13 @@ export default function Eldoria() {
           🔗 View the webpage
         </a>
         <br />
-        <p>Release date on GitHub: 20/07/2025</p>
+        <a href="https://github.com/Davidva0812/Tales-Of-Eldoria" target="_blank" rel="noreferrer">
+          🔗 View on GitHub
+        </a>
+        <br />
+        <a href="https://github.com/Davidva0812/Tales-Of-Eldoria/releases/tag/v2.1" target="_blank" rel="noreferrer">
+          🔗 Download First Release from GitHub
+        </a>
       </div>
     </div>
     )  

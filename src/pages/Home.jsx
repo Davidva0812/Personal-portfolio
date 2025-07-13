@@ -9,8 +9,8 @@ export default function Home() {
         className="d-block mx-auto mb-4 img-fluid"
         src={profilePic}
         alt="my profile image"
-        width="150"
-        height="150"
+        width="250"
+        height="250"
       />
       <h2>Junior Software Developer</h2>
       <div className="col-lg-6 mx-auto">
