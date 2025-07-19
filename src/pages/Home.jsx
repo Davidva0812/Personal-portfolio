@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <div className="px-4 py-5 my-5 text-center">
       <img
-        className="d-block mx-auto mb-4 img-fluid"
+        className="d-block mx-auto mb-4 img-fluid profile-img"
         src={profilePic}
         alt="my profile image"
         width="250"
