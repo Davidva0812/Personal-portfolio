@@ -11,6 +11,7 @@ export default function Home() {
         alt="my profile image"
         width="250"
         height="250"
+        style={{ borderRadius: '10px' }}
       />
       <h2>Junior Software Developer</h2>
       <div className="col-lg-6 mx-auto">
