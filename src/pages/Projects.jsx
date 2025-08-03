@@ -7,6 +7,14 @@ export default function Projects() {
       <br />
 
       <div className="mb-4">
+        <h4>🧙‍♂️ Spellbook Web Application (Flask, SQL, Bootstrap, HTML, JavaScript)</h4>
+        <p>Developed a full-stack web application for managing a spellbook with user authentication and CRUD operations.</p>
+        <a href="https://github.com/Davidva0812/spellbook_app" target="_blank" rel="noreferrer">
+          🔗 View on GitHub
+        </a>
+      </div>
+
+      <div className="mb-4">
         <h4>👤 Personal Portfolio (JavaScript(React))</h4>
         <p>This website was created with React, Bootstrap and HTML, Node.js.</p>
         <a href="https://github.com/Davidva0812/Personal-portfolio" target="_blank" rel="noreferrer">
