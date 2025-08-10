@@ -15,10 +15,6 @@ export default function Eldoria() {
         <a href="https://github.com/Davidva0812/Tales-Of-Eldoria" target="_blank" rel="noreferrer">
           🔗 View on GitHub
         </a>
-        <br />
-        <a href="https://github.com/Davidva0812/Tales-Of-Eldoria/releases/tag/v2.1" target="_blank" rel="noreferrer">
-          🔗 Download First Release from GitHub
-        </a>
       </div>
     </div>
     )  
