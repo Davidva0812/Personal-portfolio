@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bannerPic from "../assets/images/cover_img.png"
-import bracesicon from "../assets/images/braces.svg"
+import bannerPic from "../assets/images/cover_img.png";
+import bracesicon from "../assets/images/braces.svg";
 
 export default function Header({ theme, toggleTheme }) {
   return (
@@ -10,18 +10,19 @@ export default function Header({ theme, toggleTheme }) {
         <img
           className="img-fluid"
           src={bannerPic}
-          alt="Cover image"
+          alt="Cover banner with github profile link"
         />
       </div>
 
-      <nav 
-        className={`navbar navbar-expand-lg ${ 
+      <nav
+        className={`navbar navbar-expand-lg ${
           theme === "light" ? "navbar-light bg-light" : "navbar-dark bg-dark"
-          }`}
-          >
+        }`}
+      >
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img
+              className="braces-icon"
               src={bracesicon}
               alt="braces icon"
               height="30px"
@@ -42,7 +43,7 @@ export default function Header({ theme, toggleTheme }) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active"  to="/">
+                <Link className="nav-link active" to="/">
                   Home
                 </Link>
               </li>

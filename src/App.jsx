@@ -11,38 +11,39 @@ import Contact from "./pages/Contact";
 import Eldoria from "./pages/Eldoria";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prev => (prev === "light" ? "dark" : "light"));
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   return (
     <>
-      <header className="p-3 text-center">
+      <header className="p-2 text-center">
         <button onClick={toggleTheme} className="btn btn-outline-secondary">
           Switch to {theme === "light" ? "Dark" : "Light"} Mode
         </button>
       </header>
-      <Router  basename="/Personal-portfolio">
-      <Header theme={theme} toggleTheme={toggleTheme}/>
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/eldoria" element={<Eldoria />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/certificates" element={<Certificates />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
-      <Footer theme={theme} />
-    </Router>
-  </>  
+      <Router basename="/Personal-portfolio">
+        <Header theme={theme} toggleTheme={toggleTheme} />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/eldoria" element={<Eldoria />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/certificates" element={<Certificates />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <div class="scroll-progress"></div>
+        </main>
+        <Footer theme={theme} />
+      </Router>
+    </>
   );
 }
 
