@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Personal-portfolio/static/css/main.7631ab8f.css",
-    "main.js": "/Personal-portfolio/static/js/main.eebe081a.js",
+    "main.js": "/Personal-portfolio/static/js/main.0a78bcc6.js",
     "static/js/453.438d9e50.chunk.js": "/Personal-portfolio/static/js/453.438d9e50.chunk.js",
     "static/media/js-weather.png": "/Personal-portfolio/static/media/js-weather.5918abbbbb024315b06a.png",
     "static/media/halloween_shooter.png": "/Personal-portfolio/static/media/halloween_shooter.63e7586ba24d0854a74e.png",
@@ -11,6 +11,7 @@
     "static/media/spellbook.png": "/Personal-portfolio/static/media/spellbook.5ab1e0bed736af04a0e5.png",
     "static/media/light_mode.png": "/Personal-portfolio/static/media/light_mode.14a4c11896a65c5edaaa.png",
     "static/media/portfolio-pic.png": "/Personal-portfolio/static/media/portfolio-pic.4130093292e1b35388ca.png",
+    "static/media/aisearch.png": "/Personal-portfolio/static/media/aisearch.4370ecc6394c0d011a09.png",
     "static/media/me.jpg": "/Personal-portfolio/static/media/me.da6bf6863006c6493a6b.jpg",
     "static/media/bitcoin_data.png": "/Personal-portfolio/static/media/bitcoin_data.2ff1cf63b86417bf9837.png",
     "static/media/weather_debrecen.png": "/Personal-portfolio/static/media/weather_debrecen.64d7a12f0c6cb6695b42.png",
@@ -19,11 +20,11 @@
     "index.html": "/Personal-portfolio/index.html",
     "static/media/braces.svg": "/Personal-portfolio/static/media/braces.03d734893da2c11bf7bd0f6080ceb325.svg",
     "main.7631ab8f.css.map": "/Personal-portfolio/static/css/main.7631ab8f.css.map",
-    "main.eebe081a.js.map": "/Personal-portfolio/static/js/main.eebe081a.js.map",
+    "main.0a78bcc6.js.map": "/Personal-portfolio/static/js/main.0a78bcc6.js.map",
     "453.438d9e50.chunk.js.map": "/Personal-portfolio/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7631ab8f.css",
-    "static/js/main.eebe081a.js"
+    "static/js/main.0a78bcc6.js"
   ]
 }
