@@ -10,22 +10,16 @@ import weatherApp from "../assets/images/weather_debrecen.png";
 import halloweenGame from "../assets/images/halloween_shooter.png";
 import calculator from "../assets/images/calculator.png";
 import todolist from "../assets/images/todolist.png";
-
-//1. eldoria website ok
-//2. spellbook app ok
-//3. weather js ok
-//4. banner
-//5. financial analysis ok
-//6. personal portfolio website ok
-
-//7.  todo list ok
-//8.  bitcoin prediction ok
-//9.  movie api ok
-//10. weather api ok
-//11. halloween game ok
-//12. calculator ok
+import aiSearch from "../assets/images/aisearch.png";
 
 const projectsData = [
+  {
+    title: "🤖 AI-Powered Document Search",
+    tech: "Python, SentenceTransformers, Gradio, ChromaDB",
+    desc: "Semantic Search Engine that allows users to query a set of documents based on their actual meaning rather than just keywords.",
+    github: "https://github.com/Davidva0812/semantic-knowledge-base",
+    img: aiSearch,
+  },
   {
     title: "🎮 Fantasy RPG Website",
     tech: "HTML, CSS, JS",
