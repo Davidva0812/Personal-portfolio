@@ -14,9 +14,9 @@ import aiSearch from "../assets/images/aisearch.png";
 
 const projectsData = [
   {
-    title: "🤖 AI-Powered Document Search",
-    tech: "Python, SentenceTransformers, Gradio, ChromaDB",
-    desc: "Semantic Search Engine that allows users to query a set of documents based on their actual meaning rather than just keywords.",
+    title: "🤖 AI-Powered RAG Knowledge Base",
+    tech: "Python, Llama 3 (Groq), SentenceTransformers, ChromaDB, Gradio",
+    desc: "Multilingual RAG system using Llama 3 and ChromaDB to chat with private documents accurately and without hallucinations.",
     github: "https://github.com/Davidva0812/semantic-knowledge-base",
     img: aiSearch,
   },
