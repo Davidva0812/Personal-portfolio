@@ -3,8 +3,13 @@ import React from "react";
 export default function Certificates() {
   const certifications = [
     {
+      platform: "Google Cloud Skills Boost",
+      title: "Generative AI & LLM Fundamentals (In Progress)",
+      info: "GenAI vs Discriminative AI, Large Language Models, Prompt Engineering, Model Tuning, Responsible AI",
+    },
+    {
       platform: "Cisco Networking Academy",
-      title: "Introduction to Cybersecurity (In Progress)",
+      title: "Introduction to Cybersecurity",
       info: "Networking Basics, Threat Actors, White/Gray/Black Hat Hacking, Security Ethics",
     },
     {

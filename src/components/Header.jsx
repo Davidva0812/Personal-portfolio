@@ -78,8 +78,10 @@ export default function Header({ theme, toggleTheme }) {
               <input
                 className="form-control me-2"
                 type="search"
-                placeholder="Search"
+                placeholder="AI Search (Coming...)"
                 aria-label="Search"
+                disabled
+                style={{ cursor: "not-allowed", opacity: 0.7 }}
               />
               <button className="btn btn-outline-success" type="submit">
                 Search

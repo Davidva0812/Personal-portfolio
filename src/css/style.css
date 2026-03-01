@@ -386,11 +386,38 @@ body.dark .contact-card {
   font-size: 1.1rem;
 }
 
+.contact-link-btn {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block; /* Fontos: a gomb tudjon viselkedni blokként */
+  max-width: 100%; /* Ne legyen szélesebb a kártyánál */
+  word-wrap: break-word; /* Régebbi böngészőkhöz */
+  overflow-wrap: break-word; /* Ez tördeli el az emailt, ha túl hosszú */
+  white-space: normal; /* Engedi, hogy több sorba kerüljön a szöveg */
+  text-align: center; /* Hogy középen maradjon a kártyán belül */
+}
+
 body.light .contact-link {
   color: #85868a;
 }
 
 .contact-link:hover {
+  color: #6acde5;
+}
+
+body.light .contact-link-btn {
+  color: #85868a;
+}
+
+.contact-link-btn:hover {
   color: #6acde5;
 }
 
@@ -483,21 +510,18 @@ body.light .cert-info {
   z-index: 1;
 }
 
-/* Sötét mód (Alapértelmezett) */
 body.dark .main-project-highlight {
   background: linear-gradient(135deg, #1e1e26 0%, #252530 100%);
   border: 1px solid rgba(106, 205, 229, 0.4) !important;
   color: #f1f1f1;
 }
 
-/* Világos mód */
 body.light .main-project-highlight {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border: 1px solid #6acde5 !important;
   box-shadow: 0 10px 30px rgba(106, 205, 229, 0.1) !important;
 }
 
-/* Szöveg színek finomítása Light módban */
 body.light .card-text {
   color: #272332;
 }
@@ -511,7 +535,7 @@ body.light .project-features strong {
   color: #272332;
 }
 
-/* A "MAIN PROJECT" Ribbon */
+/* "MAIN PROJECT" Ribbon */
 .main-project-highlight::after {
   content: "MAIN PROJECT";
   position: absolute;
