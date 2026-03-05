@@ -4,7 +4,7 @@ export default function Certificates() {
   const certifications = [
     {
       platform: "Google Cloud Skills Boost",
-      title: "Generative AI & LLM Fundamentals (In Progress)",
+      title: "Generative AI & LLM Fundamentals & Responsible AI (In Progress)",
       info: "GenAI vs Discriminative AI, Large Language Models, Prompt Engineering, Model Tuning, Responsible AI",
     },
     {

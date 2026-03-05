@@ -22,7 +22,7 @@ export default function Contact() {
 
       <div className="row justify-content-center g-4">
         {/* Email card */}
-        <div className="col-md-4">
+        <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div className="contact-card text-center">
             <div className="contact-icon">📧</div>
             <h3>Email</h3>
@@ -33,8 +33,25 @@ export default function Contact() {
           </div>
         </div>
 
+        {/* LinkedIn card */}
+        <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div className="contact-card text-center">
+            <div className="contact-icon">🔗</div>
+            <h3>LinkedIn</h3>
+            <p>Let's connect and talk about technology or opportunities.</p>
+            <a
+              href="https://www.linkedin.com/in/david-varga-"
+              target="_blank"
+              rel="noreferrer"
+              className="contact-link"
+            >
+              View Profile
+            </a>
+          </div>
+        </div>
+
         {/* GitHub card */}
-        <div className="col-md-4">
+        <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div className="contact-card text-center">
             <div className="contact-icon">💻</div>
             <h3>GitHub</h3>
@@ -51,13 +68,11 @@ export default function Contact() {
         </div>
 
         {/* Location Card */}
-        <div className="col-md-4">
+        <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div className="contact-card text-center">
             <div className="contact-icon">📍</div>
             <h3>Location</h3>
-            <p>
-              Currently based in Hungary, available for remote work worldwide.
-            </p>
+            <p>Currently based in Hungary, available for remote work.</p>
             <span className="contact-link" style={{ cursor: "default" }}>
               Debrecen, Hungary
             </span>
