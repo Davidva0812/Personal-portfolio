@@ -11,8 +11,16 @@ import halloweenGame from "../assets/images/halloween_shooter.png";
 import calculator from "../assets/images/calculator.png";
 import todolist from "../assets/images/todolist.png";
 import aiSearch from "../assets/images/aisearch.png";
+import aiAssistant from "../assets/images/ai-assistant.png";
 
 const projectsData = [
+  {
+    title: "⚡Real-Time AI Document Assistant (Groq & Llama 3)",
+    tech: "React.js, FastAPI, Llama 3 (Groq), LangChain, ChromaDB",
+    desc: "A high-performance RAG application leveraging Groq LPU technology to deliver fast response times for analyzing uploaded documents. The combination of a modern React frontend and a FastAPI backend.",
+    github: "https://github.com/Davidva0812/personal-rag-ai-assistant",
+    img: aiAssistant,
+  },
   {
     title: "🤖 AI-Powered RAG Knowledge Base",
     tech: "Python, Llama 3 (Groq), SentenceTransformers, ChromaDB, Gradio",

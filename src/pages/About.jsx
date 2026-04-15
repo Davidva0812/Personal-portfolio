@@ -13,7 +13,7 @@ export default function About() {
           </h2>
 
           <p className="lead fs-5">
-            I'm a passionate Junior Developer with a strong foundation in
+            I'm a passionate Junior Software Developer with a strong foundation in
             Python, HTML, CSS, JavaScript, and React. I enjoy creating clean,
             responsive, and user-friendly interfaces that offer great user
             experiences.
@@ -29,13 +29,13 @@ export default function About() {
           >
             <div className="d-flex justify-content-between align-items-center flex-wrap">
               <h4 className="fw-bold mb-1" style={{ color: "#6ACDE5" }}>
-                Professional Software Developer Intern
+                Junior Software Developer
               </h4>
               <span
                 className="badge p-2 mb-2"
                 style={{ backgroundColor: "#6ACDE5", color: "#1a1821" }}
               >
-                6 Months Experience
+                6+ Months Experience
               </span>
             </div>
             <br />
@@ -44,8 +44,8 @@ export default function About() {
               className="mb-0 fs-6"
               style={{ lineHeight: "1.8", textAlign: "justify" }}
             >
-              Currently, I am leveraging my skills in a{" "}
-              <strong>6-month internship</strong>, delivering high-impact{" "}
+              Currently, I am contributing as a{" "}
+              <strong>Junior Software Developer</strong>, delivering high-impact{" "}
               <strong>
                 creative assets and campaigns for prominent companies
               </strong>
@@ -66,7 +66,8 @@ export default function About() {
             <div className="col-md-6">
               <p>
                 I've completed several{" "}
-                <a
+                <a 
+                  style={{ color: "#6ACDE5" }}
                   href="https://github.com/Davidva0812"
                   target="_blank"
                   rel="noopener noreferrer"

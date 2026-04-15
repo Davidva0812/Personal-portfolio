@@ -397,12 +397,12 @@ body.dark .contact-card {
   margin: 0;
   cursor: pointer;
   text-decoration: none;
-  display: inline-block; /* Fontos: a gomb tudjon viselkedni blokként */
-  max-width: 100%; /* Ne legyen szélesebb a kártyánál */
-  word-wrap: break-word; /* Régebbi böngészőkhöz */
-  overflow-wrap: break-word; /* Ez tördeli el az emailt, ha túl hosszú */
-  white-space: normal; /* Engedi, hogy több sorba kerüljön a szöveg */
-  text-align: center; /* Hogy középen maradjon a kártyán belül */
+  display: inline-block;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  text-align: center;
 }
 
 body.light .contact-link {

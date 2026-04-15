@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../assets/images/me.jpg";
+import profileImg from "../assets/images/me.webp";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -16,16 +16,19 @@ export default function Home() {
           }}
           className="internship-link"
         >
-          6 Months Internship Experience
+          Professional Experience & Skills →
         </Link>
       </h3>
       <img
         className="d-block mx-auto mb-4 img-fluid profile-img"
-        src={profilePic}
+        src={profileImg}
         alt="my profile"
         width="250"
         height="250"
         style={{ borderRadius: "10px" }}
+        fetchPriority="high"
+        loading="eager"   
+        decoding="sync"
       />
       <div className="col-lg-6 mx-auto">
         <p className="lead mb-4">

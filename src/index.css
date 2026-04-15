@@ -22,7 +22,7 @@ code {
 }
 
 body.light {
-  background-color: #f8f9fa;
+  background-color: #e5e6e8ea;
   color: #1a1a1a;
 }
 
@@ -71,7 +71,7 @@ a {
 .footer.light {
   text-align: center;
   padding: 1rem;
-  background-color: #e9ecef;
+  background-color: #d0d1d3;
   color: #495057;
   margin-top: 3rem;
   border-top: 1px solid #dee2e6;
@@ -86,7 +86,7 @@ a {
 }
 
 .navbar.bg-light {
-  background-color: #e9ecef !important;
+  background-color: #d0d1d3 !important;
   transition: background-color 0.3s ease;
 }
 
@@ -100,7 +100,7 @@ a {
 }
 
 .navbar-dark .nav-link {
-  color: #adb5bd !important;
+  color: #d0dae2 !important;
 }
 
 .braces-icon {
@@ -159,7 +159,7 @@ body.dark .custom-btn-outline {
   transform: translateY(-2px);
 }
 
-/*Search bar*/
+/*Search bar
 body.dark .btn-outline-success {
   color: #6acde5 !important;
   border-color: #6acde5 !important;
@@ -188,7 +188,7 @@ body.light .btn-outline-success:hover {
 
 .btn-outline-success:focus {
   box-shadow: 0 0 0 0.25rem rgba(106, 205, 229, 0.25) !important;
-}
+}*/
 
 /*Links*/
 a {
@@ -397,4 +397,13 @@ body.dark .input-group textarea::placeholder {
 
 .submit-btn:hover {
   transform: scale(1.02);
+}
+
+body.dark .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+    opacity: 1; /* Firefox miatt szükséges */
+}
+
+body.light .form-control::placeholder {
+    color: rgba(0, 0, 0, 0.4) !important;
 }

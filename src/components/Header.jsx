@@ -1,16 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bannerPic from "../assets/images/cover_img.png";
+import bannerImg from "../assets/images/cover_img.webp";
 import bracesicon from "../assets/images/braces.svg";
 
 export default function Header({ theme, toggleTheme }) {
   return (
     <>
       <div className="banner">
-        <img
+        <img 
+          src={bannerImg} 
+          alt="Banner" 
+          width="1000" 
+          height="250" 
           className="img-fluid"
-          src={bannerPic}
-          alt="Cover banner with github profile link"
+          fetchPriority="high"
+          style={{ width: '100%', height: 'auto' }}
         />
       </div>
 
@@ -74,7 +78,7 @@ export default function Header({ theme, toggleTheme }) {
               </li>
             </ul>
 
-            <form className="d-flex" role="search">
+            {/*<form className="d-flex" role="search">
               <input
                 className="form-control me-2"
                 type="search"
@@ -86,7 +90,33 @@ export default function Header({ theme, toggleTheme }) {
               <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
-            </form>
+            </form>*/}
+
+ <button 
+  onClick={toggleTheme} 
+  className="btn" 
+  style={{ 
+    // Ha light mód van, az #AAB2B6-ot használja, különben a #d0dae2-t
+    color: theme === "light" ? "#495057" : "#d0dae2", 
+    borderColor: theme === "light" ? "#495057" : "#d0dae2",
+    backgroundColor: "transparent",
+    fontWeight: "500",
+    transition: "all 0.3s ease"
+  }}
+  // Hover effekt, ami szintén alkalmazkodik a színekhez
+  onMouseOver={(e) => {
+    const activeColor = theme === "light" ? "#495057" : "#d0dae2";
+    e.currentTarget.style.backgroundColor = `${activeColor}15`; // 15 a végén = ~8% átlátszóság
+    e.currentTarget.style.boxShadow = `0 0 8px ${activeColor}40`;
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.backgroundColor = "transparent";
+    e.currentTarget.style.boxShadow = "none";
+  }}
+>
+  Switch to {theme === "light" ? "Dark" : "Light"} Mode
+</button>
+
           </div>
         </div>
       </nav>
