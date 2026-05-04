@@ -15,9 +15,9 @@ import aiAssistant from "../assets/images/ai-assistant.png";
 
 const projectsData = [
   {
-    title: "⚡Real-Time AI Document Assistant (Groq & Llama 3)",
+    title: "⚡Real-Time AI Document Assistant",
     tech: "React.js, FastAPI, Llama 3 (Groq), LangChain, ChromaDB",
-    desc: "A high-performance RAG application leveraging Groq LPU technology to deliver fast response times for analyzing uploaded documents. The combination of a modern React frontend and a FastAPI backend.",
+    desc: "RAG application leveraging Groq LPU technology to deliver fast response for analyzing documents. The combination of React frontend and FastAPI backend.",
     github: "https://github.com/Davidva0812/personal-rag-ai-assistant",
     img: aiAssistant,
   },
@@ -210,7 +210,7 @@ function ProjectCard({ project }) {
                     setFlipped(false);
                   }}
                 >
-                  ⬅ Back to front
+                  Back to front
                 </button>
               </div>
             </div>
