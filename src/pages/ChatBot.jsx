@@ -30,6 +30,7 @@ const ChatBot = ({ theme, onClose }) => {
     setInput('');
     setLoading(true);
 
+    /*
     // --- TEMPORARY DEMO MODE ---
     setTimeout(() => {
       const demoResponse = { 
@@ -39,17 +40,16 @@ const ChatBot = ({ theme, onClose }) => {
       setMessages(prev => [...prev, demoResponse]);
       setLoading(false);
     }, 1000);
-
-    /*
+    */ 
+    
     try {
-      const response = await axios.post('http://127.0.0.1:8000/chat', { message: input });
+      const response = await axios.post('https://rag-ai-assistant-b789.onrender.com/chat', { message: input });
       setMessages(prev => [...prev, { text: response.data.response, sender: 'ai' }]);
     } catch (error) {
       setMessages(prev => [...prev, { text: "Error: I couldn't connect to the server.", sender: 'ai' }]);
     } finally {
       setLoading(false);
-    }
-    */  
+    } 
   };
 
   return (
