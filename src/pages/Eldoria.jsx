@@ -147,7 +147,7 @@ export default function Eldoria({ theme = 'dark' }) {
 
           {/* Right side: Slideshow */}
           <div className="col-lg-7 p-4 p-md-5 d-flex align-items-center justify-content-center">
-            <div className="rounded-4 bg-info bg-opacity-10 shadow-sm overflow-hidden w-100 h-100 d-flex align-items-center justify-content-center">
+            <div className="rounded-4 bg-info bg-opacity-10 shadow-sm overflow-hidden w-100 d-flex align-items-center justify-content-center">
                <div className="w-100 border border-info border-opacity-25 rounded-4 overflow-hidden">
                   <ProjectSlideshow />
                </div>

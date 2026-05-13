@@ -87,7 +87,16 @@ const ChatBot = ({ theme, onClose }) => {
             </div>
           </div>
         ))}
-        {loading && <div className="text-muted small italic p-2">Thinking...</div>}
+        {loading && (
+          <div style={{ 
+            color: '#878e93',
+            fontSize: '0.8rem', 
+            fontStyle: 'italic', 
+            padding: '10px' 
+          }}>
+            Thinking...
+          </div>
+        )}
         <div ref={chatEndRef} />
       </div>
 
