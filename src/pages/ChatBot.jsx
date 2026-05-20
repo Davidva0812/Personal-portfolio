@@ -87,14 +87,20 @@ const ChatBot = ({ theme, onClose }) => {
             </div>
           </div>
         ))}
-        {loading && (
+          {loading && (
           <div style={{ 
             color: '#878e93',
             fontSize: '0.8rem', 
             fontStyle: 'italic', 
-            padding: '10px' 
+            padding: '10px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '4px'
           }}>
-            Thinking...
+            <div>Thinking...</div>
+            <div style={{ fontSize: '0.7rem', opacity: 0.7 }}>
+              *Note: The first response might take 30-40s while the free hosting server wakes up. Thank you for your patience!*
+            </div>
           </div>
         )}
         <div ref={chatEndRef} />
