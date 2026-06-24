@@ -17,7 +17,7 @@ import fintechProject from "../assets/images/fintech-project.png";
 const projectsData = [
   {
     title: "🛡️ FinTech Order & Transaction Management System",
-    tech: "FastAPI, SQLite, aiosqlite, Pydantic v2, SQL (Window Functions)",
+    tech: "FastAPI, SQLite, aiosqlite, Pydantic v2, SQL",
     desc: "A production-ready asynchronous backend demonstrating strict ACID transactions and automated rollback safety. Features advanced analytical data tracking and zero-configuration schema auto-initialization.",
     github: "https://github.com/Davidva0812/fintech-order-transaction-fastapi",
     img: fintechProject,
