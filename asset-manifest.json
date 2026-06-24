@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Personal-portfolio/static/css/main.0dcb595e.css",
-    "main.js": "/Personal-portfolio/static/js/main.03e028ce.js",
+    "main.js": "/Personal-portfolio/static/js/main.0e7d1977.js",
     "static/js/453.5c6ddc6a.chunk.js": "/Personal-portfolio/static/js/453.5c6ddc6a.chunk.js",
     "static/media/js-weather.png": "/Personal-portfolio/static/media/js-weather.5918abbbbb024315b06a.png",
     "static/media/town_menu.png": "/Personal-portfolio/static/media/town_menu.8a7336c2d10ce1d3a722.png",
@@ -26,16 +26,17 @@
     "static/media/balance.png": "/Personal-portfolio/static/media/balance.b1e1c95cbe7c215f1c74.png",
     "static/media/aisearch.png": "/Personal-portfolio/static/media/aisearch.4eddd5d266829a86b8a6.png",
     "static/media/cover_img.webp": "/Personal-portfolio/static/media/cover_img.0c67265f38b1ceddee3a.webp",
+    "static/media/fintech-project.png": "/Personal-portfolio/static/media/fintech-project.9bc2f92a7f0f6120270c.png",
     "static/media/calculator.png": "/Personal-portfolio/static/media/calculator.daf97701a889a706feb5.png",
     "static/media/me.webp": "/Personal-portfolio/static/media/me.db51da38f4e99befadae.webp",
     "index.html": "/Personal-portfolio/index.html",
     "static/media/braces.svg": "/Personal-portfolio/static/media/braces.03d734893da2c11bf7bd0f6080ceb325.svg",
     "main.0dcb595e.css.map": "/Personal-portfolio/static/css/main.0dcb595e.css.map",
-    "main.03e028ce.js.map": "/Personal-portfolio/static/js/main.03e028ce.js.map",
+    "main.0e7d1977.js.map": "/Personal-portfolio/static/js/main.0e7d1977.js.map",
     "453.5c6ddc6a.chunk.js.map": "/Personal-portfolio/static/js/453.5c6ddc6a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0dcb595e.css",
-    "static/js/main.03e028ce.js"
+    "static/js/main.0e7d1977.js"
   ]
 }
