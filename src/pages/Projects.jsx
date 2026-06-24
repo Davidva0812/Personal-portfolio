@@ -18,7 +18,7 @@ const projectsData = [
   {
     title: "🛡️ FinTech Order & Transaction Management System",
     tech: "FastAPI, SQLite, aiosqlite, Pydantic v2, SQL",
-    desc: "A production-ready asynchronous backend demonstrating strict ACID transactions and automated rollback safety. Features advanced analytical data tracking and zero-configuration schema auto-initialization.",
+    desc: "Asynchronous FastAPI backend with strict SQL ACID transactions and auto-rollback safety. Advanced database analytics and dynamic schema initialization.",
     github: "https://github.com/Davidva0812/fintech-order-transaction-fastapi",
     img: fintechProject,
   },
