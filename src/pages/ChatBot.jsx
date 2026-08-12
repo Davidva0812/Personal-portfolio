@@ -30,6 +30,7 @@ const ChatBot = ({ theme, onClose }) => {
     setInput('');
     setLoading(true);
 
+    /*
     // --- TEMPORARY DEMO MODE ---
     setTimeout(() => {
       const demoResponse = { 
@@ -39,17 +40,16 @@ const ChatBot = ({ theme, onClose }) => {
       setMessages(prev => [...prev, demoResponse]);
       setLoading(false);
     }, 1000);
-
-    /*
+    */ 
+    
     try {
-      const response = await axios.post('http://127.0.0.1:8000/chat', { message: input });
+      const response = await axios.post('https://rag-ai-assistant-b789.onrender.com/chat', { message: input });
       setMessages(prev => [...prev, { text: response.data.response, sender: 'ai' }]);
     } catch (error) {
       setMessages(prev => [...prev, { text: "Error: I couldn't connect to the server.", sender: 'ai' }]);
     } finally {
       setLoading(false);
-    }
-    */  
+    } 
   };
 
   return (
@@ -87,7 +87,22 @@ const ChatBot = ({ theme, onClose }) => {
             </div>
           </div>
         ))}
-        {loading && <div className="text-muted small italic p-2">Thinking...</div>}
+          {loading && (
+          <div style={{ 
+            color: '#878e93',
+            fontSize: '0.8rem', 
+            fontStyle: 'italic', 
+            padding: '10px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '4px'
+          }}>
+            <div>Thinking...</div>
+            <div style={{ fontSize: '0.7rem', opacity: 0.7 }}>
+              *Note: The first response might take 30-40s while the free hosting server wakes up. Thank you for your patience!*
+            </div>
+          </div>
+        )}
         <div ref={chatEndRef} />
       </div>
 

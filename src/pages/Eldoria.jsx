@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import charSelectImg from '../assets/images/char_select.png';
 import townImg from '../assets/images/town_menu.png';
@@ -8,93 +9,75 @@ import cemeteryImg from '../assets/images/cemetery.png';
 import battleImg from '../assets/images/battle.png';
 
 function ProjectSlideshow() {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const slides = [
+    { src: charSelectImg, alt: 'Character Selection' },
+    { src: townImg, alt: 'Town menu' },
+    { src: profileImg, alt: 'Profile with inventory and stats' },
+    { src: alchemistImg, alt: 'Alchemist NPC with dialogue and shop interface' },
+    { src: mapImg, alt: 'Explorable World Map' },
+    { src: cemeteryImg, alt: 'Cemetery scene showcasing enemies' },
+    { src: battleImg, alt: 'Battle scene with dynamic combat' }
+  ];
+
+  const handleImageClick = (src) => {
+    if (isMobile) {
+      setSelectedImage(src);
+    }
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
-    <Carousel fade interval={4000} className="shadow-lg rounded-4 overflow-hidden border border-secondary">
-      <Carousel.Item>
-        <div className="position-relative">
-          <img
-            className="d-block w-100"
-            src={typeof charSelectImg !== 'undefined' ? charSelectImg : "images/placeholder1.webp"}
-            alt="Character Selection"
-            style={{ height: '450px', objectFit: 'cover' }}
-          />
-          <div className="position-absolute bottom-0 start-0 w-100 h-50 bg-gradient-to-t from-dark"></div>
-        </div>
-      </Carousel.Item>
+    <>
+      <Carousel fade interval={4000} className="shadow-lg rounded-4 overflow-hidden border border-secondary eldoria-carousel">
+        {slides.map((slide, index) => (
+          <Carousel.Item key={index}>
+            <div className="position-relative">
+              <img
+                className="d-block w-100 eldoria-slide-img"
+                src={typeof slide.src !== 'undefined' ? slide.src : "images/placeholder1.webp"}
+                alt={slide.alt}
+                style={{ 
+                  objectFit: 'cover', 
+                  cursor: isMobile ? 'pointer' : 'default'
+                }}
+                onClick={() => handleImageClick(slide.src)}
+                title={isMobile ? "Click to view enlarged" : ""}
+              />
+              <div className="position-absolute bottom-0 start-0 w-100 h-50 bg-gradient-to-t from-dark"></div>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
 
-      <Carousel.Item>
-        <div className="position-relative">
-          <img
-            className="d-block w-100"
-            src={typeof townImg !== 'undefined' ? townImg : "images/placeholder1.webp"}
-            alt="Town menu"
-            style={{ height: '450px', objectFit: 'cover' }}
-          />
-          <div className="position-absolute bottom-0 start-0 w-100 h-50 bg-gradient-to-t from-dark"></div>
+      {selectedImage && (
+        <div className="custom-modal-overlay" onClick={closeModal}>
+          <div className="custom-modal-window" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header-bar">
+              <h5 style={{ margin: 0, color: '#fff' }}>Enlarged view</h5>
+              <button className="close-x-btn" onClick={closeModal}>×</button>
+            </div>
+            <div className="modal-body-content">
+              <img src={selectedImage} alt="Enlarged view" />
+            </div>
+          </div>
         </div>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <div className="position-relative">
-          <img
-            className="d-block w-100"
-            src={typeof profileImg !== 'undefined' ? profileImg : "images/placeholder1.webp"}
-            alt="Profile with inventory and stats"
-            style={{ height: '450px', objectFit: 'cover' }}
-          />
-          <div className="position-absolute bottom-0 start-0 w-100 h-50 bg-gradient-to-t from-dark"></div>
-        </div>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <div className="position-relative">
-          <img
-            className="d-block w-100"
-            src={typeof alchemistImg !== 'undefined' ? alchemistImg : "images/placeholder1.webp"}
-            alt="Alchemist NPC with dialogue and shop interface"
-            style={{ height: '450px', objectFit: 'cover' }}
-          />
-          <div className="position-absolute bottom-0 start-0 w-100 h-50 bg-gradient-to-t from-dark"></div>
-        </div>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <div className="position-relative">
-          <img
-            className="d-block w-100"
-            src={typeof mapImg !== 'undefined' ? mapImg : "images/placeholder1.webp"}
-            alt="Explorable World Map"
-            style={{ height: '450px', objectFit: 'cover' }}
-          />
-          <div className="position-absolute bottom-0 start-0 w-100 h-50 bg-gradient-to-t from-dark"></div>
-        </div>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <div className="position-relative">
-          <img
-            className="d-block w-100"
-            src={typeof cemeteryImg !== 'undefined' ? cemeteryImg : "images/placeholder1.webp"}
-            alt="Cemetery scene showcasing enemies"
-            style={{ height: '450px', objectFit: 'cover' }}
-          />
-          <div className="position-absolute bottom-0 start-0 w-100 h-50 bg-gradient-to-t from-dark"></div>
-        </div>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <div className="position-relative">
-          <img
-            className="d-block w-100"
-            src={typeof battleImg!== 'undefined' ? battleImg : "images/placeholder1.webp"}
-            alt="Battle scene with dynamic combat"
-            style={{ height: '450px', objectFit: 'cover' }}
-          />
-          <div className="position-absolute bottom-0 start-0 w-100 h-50 bg-gradient-to-t from-dark"></div>
-        </div>
-      </Carousel.Item>
-
-    </Carousel>
+      )}
+    </>
   );
 }
 
@@ -112,7 +95,7 @@ export default function Eldoria({ theme = 'dark' }) {
       <div className={`card ${cardBgClass} border-0 shadow-lg rounded-5 overflow-hidden`} style={cardStyle}>
         
         <div className="row g-0 align-items-stretch">
-          <div className="col-lg-6 p-4 p-md-5 d-flex flex-column justify-content-between text-center text-lg-start">
+          <div className="col-lg-5 p-4 p-md-5 d-flex flex-column justify-content-between text-center text-lg-start">
             
             {/* 1. Group: Header (Aligned with the Carousel top) */}
             <header>
@@ -163,8 +146,8 @@ export default function Eldoria({ theme = 'dark' }) {
           </div>
 
           {/* Right side: Slideshow */}
-          <div className="col-lg-6 p-4 p-md-5 d-flex align-items-center justify-content-center">
-            <div className="rounded-4 bg-info bg-opacity-10 shadow-sm overflow-hidden w-100 h-100 d-flex align-items-center justify-content-center">
+          <div className="col-lg-7 p-4 p-md-5 d-flex align-items-center justify-content-center">
+            <div className="rounded-4 bg-info bg-opacity-10 shadow-sm overflow-hidden w-100 d-flex align-items-center justify-content-center">
                <div className="w-100 border border-info border-opacity-25 rounded-4 overflow-hidden">
                   <ProjectSlideshow />
                </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import bannerImg from "../assets/images/cover_img.webp";
+import bannerImgLight from "../assets/images/cover_img_light.webp";
 import bracesicon from "../assets/images/braces.svg";
 
 export default function Header({ theme, toggleTheme }) {
@@ -8,7 +9,7 @@ export default function Header({ theme, toggleTheme }) {
     <>
       <div className="banner">
         <img 
-          src={bannerImg} 
+          src={theme === "light" ? bannerImgLight : bannerImg} 
           alt="Banner" 
           width="1000" 
           height="250" 

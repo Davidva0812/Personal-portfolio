@@ -205,6 +205,17 @@ body.light .card-back-footer {
   border-radius: 10px;
 }
 
+.eldoria-carousel .eldoria-slide-img {
+  height: 450px;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  .eldoria-carousel .eldoria-slide-img {
+    height: clamp(280px, 50vw, 450px);
+  }
+}
+
 /* 1. The darker overlay, which covers the whole screen */
 .custom-modal-overlay {
   position: fixed;
